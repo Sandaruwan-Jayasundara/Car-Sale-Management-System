@@ -1,0 +1,425 @@
+
+<html>
+    <!--spare part admin java script-->
+    <link href="/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    
+
+    <link href="spareparts/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="spareparts/css/prettyPhoto.css" rel="stylesheet">
+    <link href="spareparts/css/price-range.css" rel="stylesheet">
+    <link href="spareparts/css/animate.css" rel="stylesheet">
+	<link href="spareparts/css/main.css" rel="stylesheet">
+	<link href="spareparts/css/responsive.css" rel="stylesheet">
+
+
+
+<!--main vehicle-->
+
+<link rel="stylesheet" href="/asse/css/style1.css" type="text/css">
+ <link rel="stylesheet" href="/asse/css/font-awesome.min.css" type="text/css">
+
+ 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+
+
+
+<script src="/asse/js/jquery-ui.min.js"></script>
+<script src="/asse/js/jquery.slicknav.js"></script>
+<script src="/asse/js/jquery.nicescroll.min.js"></script>
+
+
+	<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container" style="height: 50px;">
+				<div class="row">
+					<div class="col-sm-6" style="float: right; ">
+						<div class="" style="float: right;" >
+							<ul class="nav navbar-nav" style="font-size:18px;">
+								<li><a href=""><i class="fa fa-user"></i> Home</a></li>
+								<li><a href="/Login"><i class="fa fa-lock"></i> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/header_top-->
+	</header>
+
+ <br><br><br>
+  
+<body style="background-color:#ffffff;" onload="myFunction()">
+
+    <div id="loading"></div>
+
+<div class="search-logo" style="width: 100%; margin-left: 20px;">
+  
+    <center>
+          
+                    <form class="navbar-search-center"  action="feed/search" method="GET">
+
+                    <div class="input-group">
+                    <a  href=""><img style=" height: 50px; margin-top: auto; margin-bottom: auto;" src="https://lh4.googleusercontent.com/vVdKHO0ddg1HfGSmjJMfM94XnYWJWhxOYjEa1XHFrzZ1OBGHSi92rGH4TMPKXuyWbsH2GS9Es7XmgeWj2L6ugejQIM4Np5SAJbxVTZWMGZRiUbDo1fZvJxmY2PQsd_t30EFdJgn8" alt="" /></a>
+                    <input type="text" class="form-control bg-light border-0 small" id="myinput" onkeyup="searchFunction()"   placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2" style="width: 950px; height: 50px; padding-right: 10px;"  spellcheck="false" name="titlesearch" autocomplete="off">
+                    <button class="btn btn-primary" type="button"  value='Search' id='submit' onkeyup="search_button()"  style=" width: 100px; height: 50px; margin-top: auto; margin-bottom: auto;">SEARCH</button>
+                    </div>
+                    </form>
+
+<br>
+
+
+
+<div class="mainmenu pull-center" style="display: inline-block;">
+							<ul class="nav navbar-nav collapse navbar-collapse" style="font-size: large; color:black;">
+
+								<li><a href="/" class="active"><i class="fa fa-home" style="font-size: large; color:black;" ></i>Home</a></li>
+								<li class=""><a href="/SpareHome"  style="font-size: large; color:black;">Spare parts</a></li>
+								<li class=""><a href="#" style="font-size: large; color:black;">Request</i></a></li>
+								<li><a href="" style="font-size: large; color:black;">About</a></li>
+								<li><a href="/Contactus" style="font-size: large; color:black;">Contact</a></li>
+							</ul>
+			</div>
+</center>
+<br>
+<br>
+</div><!--search-logo-->
+
+
+
+<center>
+	<section id="slider" style="background-color:  #959595; width:1200px; margin-left:50px; align-content: center;"><!--slider-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#slider-carousel" data-slide-to="1"></li>
+							<li data-target="#slider-carousel" data-slide-to="2"></li>
+						</ol>
+						
+						<div class="carousel-inner" >
+							<div class="item active">
+								<div class="col-sm-6">
+									<h1 style="color: white;"><span>S</span>ashika</h1>
+									<h2>Vehicles & Spare parts</h2>
+									<p style="color: rgb(236, 233, 233);">We are the fastest growing largest digital automotive marketplace in Sri Lanka.</p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="https://image.freepik.com/free-psd/rent-car-social-media-banner-template_159024-86.jpg"style="height: 410px;width:450px;"  class="girl img-responsive" alt="" />
+									
+								</div>
+							</div>
+							<div class="item">
+								<div class="col-sm-6">
+									<h1 style="color: white;"><span>B</span>rands</h1>
+									<h2>100% Genuine Brands</h2>
+									<p style="color: rgb(236, 233, 233);">Sell your car Make more money by selling your car with us. AutoMe bot can generate a free instant valuation for your items.</p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="https://cdn1.vectorstock.com/i/1000x1000/65/90/car-rental-ad-banner-mockup-for-business-promotion-vector-22176590.jpg" style="height: 410px;width:450px;" class="girl img-responsive" alt="" />
+								
+								</div>
+							</div>
+							
+							<div class="item">
+								<div class="col-sm-6">
+									<h1 style="color: white;"><span>S</span >ERVICE</h1>
+									<h2>Customer friendly</h2>
+									<p style="color: rgb(236, 233, 233);">If you’re willing to take a cash payment, consider arranging for this to take place at a bank. The staff there can count out the notes and guarantee they’re genuine. You’ll also be able to pay the money in immediately.</p>
+									<button type="button" class="btn btn-default get">Get it now</button>
+								</div>
+								<div class="col-sm-6">
+									<img src="https://cdn.dribbble.com/users/4861236/screenshots/14279740/media/b6ba9aa888e53f732c174f07d3ad17d3.jpg" style="height: 410px; width:450px;"  class="girl img-responsive" alt="" />
+								
+								</div>
+							</div>
+							
+						</div>
+						
+						<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+							<i class="fa fa-angle-left"></i>
+						</a>
+						<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+							<i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section><!--/slider-->
+</center>				
+</div>
+</div>
+
+<center>
+<div class="center-tag">
+{{#each promotion1}}
+<img style="height: 230px; width:1200px; margin-left: 50px;"  src="http://localhost:3000/img/promotion/Ads1/{{this.promotion}}" alt="">
+{{/each}} 
+</div>
+</center>
+
+
+
+
+<div class="selling-pro">
+<br>
+<br>
+    <table class="table table-hoves" id="table" style=" width:950px;background-color: white; float: left; margin-left: 180px;" >
+      <tbody> 
+            
+       {{#each spare}}
+            <tr>
+                <td> <a style="float:left" href="/get_part/{{this.item_code}}"> <img style="height: 180px; width:250px;" src="http://localhost:3000/img/{{this.photo}}" alt=""></a>
+                <div class="gol"style="margin-left:300px">
+                <a href="/get_part/{{this.item_code}}"><h2 style="font-size: 25px; font-family:'Times New Roman', Times, serif ;  color: #2f63a3;">{{this.item_name}}</h2></a>
+                <p class="card-text" style="font-size:15px; Times New Roman', Times, serif ; ">Brand:{{this.brand_model}}</p>
+                <p class="card-text" style="font-size:15px; font-weight: bold; font-family:'Times New Roman', Times, serif ; margin-top: -15px;">Rs.{{this.price}}</p>
+</div>
+                </td>
+            </tr>
+            {{/each}}
+
+        
+        </tbody>
+    </table>
+
+
+
+
+			<div class="poros" style="float: right;">
+       	
+		
+          <div class="shipping text-center" style="height: 600px; width: 230px; background-color: #ffffff; float: right; margin-right: 130px;" ><!--shipping-->
+                 {{#each promotion2}}
+                <img style="height: 600px; width: 230px;" src="http://localhost:3000/img/promotion/Ads2/{{this.promotion}}" alt="">
+                 {{/each}}
+                 
+		    </div><!--/shipping-->		
+		<br>
+        <div class="shipping text-center" style="height: 600px; width: 230px; background-color: #ffffff; float: right; margin-right: 130px;" ><!--shipping-->
+                    {{#each promotion3}}
+                     <img style="height: 600px; width: 230px;" src="http://localhost:3000/img/promotion/Ads3/{{this.promtion}}" alt="">
+                    {{/each}} 
+				</div><!--/shipping-->
+                
+</div>
+</div>
+
+
+
+
+
+
+<!-- Discount Section Begin -->
+<section class="discount" style="width: 100%; margin-top: 1700px; background-color: rgba(255, 255, 255, 0.986); ">
+
+<hr style="color: red;">
+
+      <br>
+
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="discount__pic">
+                    <img style="width: 500px;" src="https://lh4.googleusercontent.com/vVdKHO0ddg1HfGSmjJMfM94XnYWJWhxOYjEa1XHFrzZ1OBGHSi92rGH4TMPKXuyWbsH2GS9Es7XmgeWj2L6ugejQIM4Np5SAJbxVTZWMGZRiUbDo1fZvJxmY2PQsd_t30EFdJgn8" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-0" >
+                <div class="discount__text" style="background-color:rgba(255, 255, 255, 0.986);  margin-top: -40px;">
+                    <div class="discount__text__title">
+                        <span>Ride Your Future</span>
+                        <h2 style="font-size: 30px;">STAY SAFE YOUR OWN RIDE</h2>
+                        <h5><span>CarSale</span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount Section End -->
+
+<!-- Services Section Begin -->
+<section class="services spad" style="background-color: #959595;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-car"></i>
+                    <h6 style="color: #ffffff;">Free Registration</h6>
+                    <p style="color: #ffffff;">For all vehicles</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-money"></i>
+                    <h6 style="color: #ffffff;">Money Back Guarantee</h6>
+                    <p style="color: #ffffff;">If not good have Problems with item</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-support"></i>
+                    <h6 style="color: #ffffff;">Service Support 24/7</h6>
+                    <p style="color: #ffffff;">Dedicated support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-headphones"></i>
+                    <h6 style="color: #ffffff;">Payment Secure</h6>
+                    <p style="color: #ffffff;">100% secure payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->
+
+<!-- Footer Section Begin -->
+<footer class="footer" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-7">
+                <div class="footer__about">
+                    <p>Sell your spare parts in no time at all with our practical catalogue system. All information about spare parts is presented intuitively and visually. Your customer identifies the part he needs, places it in the shopping basket with one click and orders it directly. </p>
+                    <div class="footer__payment">
+                        <a href="#"><img src="asse/img/payment/payment-1.png" alt=""></a>
+                        <a href="#"><img src="asse/img/payment/payment-2.png" alt=""></a>
+                        <a href="#"><img src="asse/img/payment/payment-3.png" alt=""></a>
+                        <a href="#"><img src="asse/img/payment/payment-4.png" alt=""></a>
+                        <a href="#"><img src="asse/img/payment/payment-5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-5">
+                <div class="footer__widget">
+                    <h6>Quick links</h6>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4">
+                <div class="footer__widget">
+                    <h6>Account</h6>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8 col-sm-8">
+                <div class="footer__newslatter">
+                    <div class="footer__social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+
+$(document).ready(function(){  
+    $('#myinput').keyup(function(){  
+         search_table($(this).val());  
+    });  
+    function search_table(value){  
+         $('#table tr').each(function(){  
+              var found = 'false';  
+              $(this).each(function(){  
+                   if($(this).text().toLowerCase().indexOf(value.toLowerCase()) >= 0)  
+                   {  
+                        found = 'true';  
+                   }  
+              });  
+              if(found == 'true')  
+              {  
+                   $(this).show();  
+              }  
+              else  
+              {  
+                   $(this).hide();  
+              }  
+         });  
+    }  
+}); 
+
+</script>
+
+
+
+<script>
+	var preloader = document.getElementById("loading");
+		function myFunction(){
+		preloader.style.display = 'none';
+		};
+
+</script>
+<style>
+#loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #fff
+	url('https://miro.medium.com/max/1600/1*CsJ05WEGfunYMLGfsT2sXA.gif')
+	 no-repeat center center;	
+	z-index: 99999;
+   opacity: 1;
+}
+  </style>
+
+
+
+
+
+
+
+
+<script src="spareparts/js/search.js"></script>
+	
+
+  
+    <script src="spareparts/js/jquery.js"></script>
+	<script src="spareparts/js/bootstrap.min.js"></script>
+	<script src="spareparts/js/jquery.scrollUp.min.js"></script>
+	<script src="spareparts/js/price-range.js"></script>
+    <script src="spareparts/js/jquery.prettyPhoto.js"></script>
+    <script src="spareparts/js/main.js"></script>
+</body>
+</html>
